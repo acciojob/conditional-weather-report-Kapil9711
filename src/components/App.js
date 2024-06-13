@@ -8,9 +8,7 @@ const App = () => {
     conditions: "",
   });
   React.useEffect(() => {
-    const temperature = window.prompt("Enter temperature");
-    const conditions = window.prompt("Enter weather condition");
-    setWeatherInput({ temperature, conditions });
+    setWeatherInput({ temperature: 25, conditions: "Sunny" });
   }, []);
   return (
     <div>
